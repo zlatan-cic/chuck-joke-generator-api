@@ -6,7 +6,7 @@ Chuck Norris Joke Generator is a simple web application that fetches random Chuc
 
 ## Demo
 
-(Optional) Include a link to a live demo of the project if it's hosted online.
+(https://zlatan-cic.github.io/chuck-joke-generator-api/)
 
 ## Technologies Used
 
