@@ -1,9 +1,23 @@
-const jokeEl = document.getElementById('joke');
-const jokeBtn = document.getElementById('btn-joke');
+const jokeEl = document.getElementById("joke");
+const jokeBtn = document.getElementById("btn-joke");
 
-console.log(jokeBtn);
-console.log(jokeEl);
+const generateJoke = function () {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://api.chucknorris.io/jokes/random");
 
-jokeBtn.addEventListener('click', function(){
-  console.log("I have been click");
-})
+  xhr.onreadystatechange = function() {
+    if(this.readyState === 4) {
+      if(this.status === 200){
+        jokeEl.innerHTML = JSON.parse(this.responseText).value;
+      } else {
+        jokeEl.innerText = "Something Went Wrong .·´¯`(>▂<)´¯`·.  "
+      }
+    }
+  }
+
+  xhr.send()
+
+};
+
+jokeBtn.addEventListener("click", generateJoke);
+document.addEventListener('DOMContentLoaded', generateJoke);
