@@ -23,11 +23,11 @@ Chuck Norris Joke Generator is a simple web application that fetches random Chuc
 
 ## Screenshot
 
-![Screenshot 1](./img/screenshot.png)
+![Screenshot 1](img/screenshot.png)
 
 ## API Documentation
 
 The Chuck Norris Jokes API provides various endpoints to retrieve jokes. For more details, refer to the official [Chuck Norris Jokes API documentation](https://api.chucknorris.io).
 
-(Optional) Provide examples of API requests and responses if needed.
+
 
